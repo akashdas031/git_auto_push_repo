@@ -7,9 +7,9 @@
 #
 #   ##############################################################
 
-   git status
+  
 
-   if [ $? == '0' ]; then 
+   if [ -d .git ]; then 
 	   echo "git is initialized and perform auto push operation..."
    else
 	   echo "git is not initialized...do you want to initialize to perform operation???  "
