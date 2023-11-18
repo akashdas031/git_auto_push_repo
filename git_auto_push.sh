@@ -37,6 +37,7 @@
 		    fi
 	   else
 		   echo "all files in this repo is not commited to the local repository...commit all files and try again..."
+		   exit 1
 	   fi
 	  
    else
