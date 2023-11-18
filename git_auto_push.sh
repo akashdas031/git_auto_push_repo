@@ -10,10 +10,7 @@
   
 
    if [ -d .git ]; then
-
-	 export  commit = `git status --porcelain | wc -l`
-
-	   if [ "$commit" -eq "0"]; then
+	   if [-n " $(git status --porcelain" ]; then
 		   echo "Everything in this directory is already commited to the local repo...you can go forward to perform the action..."
 		    
 		    if [ "git remote | wc -l " == '0' ]; then
