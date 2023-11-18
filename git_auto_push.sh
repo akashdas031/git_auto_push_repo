@@ -13,7 +13,7 @@
 
 	   commit = `git status --porcelain | wc -l`
 
-	   if [ $commit == '0']; then
+	   if [ "$commit" == "0"]; then
 		   echo "Everything in this directory is already commited to the local repo...you can go forward to perform the action..."
 		    
 		    if [ "git remote | wc -l " == '0' ]; then
